@@ -47,6 +47,7 @@ export const FormulaCellRenderer: CellRenderer = {
           ...colMeta.display_column_meta,
         },
         readonly: true,
+        formula: true,
       })
     } else {
       if (parseProp(column.colOptions)?.error) {
